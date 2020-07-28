@@ -9,6 +9,7 @@ const geocode = require('./utils/geocode')
 
 
 const app = express();
+const port = process.env.PORT || 3000; //para configurar puerto en Heroku
 
 //Definiendo paths para Express config
 const publicDirectoryPath = path.join(__dirname,'../public');
@@ -155,6 +156,6 @@ app.get('*', (req,res) => {
 
 });
 
-app.listen(3000, () => {
-    console.log('El servidor esta corriendo en el puerto 3000');
+app.listen(port, () => {
+    console.log('El servidor esta corriendo en el puerto '+port);
 });
