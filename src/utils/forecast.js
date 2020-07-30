@@ -14,7 +14,7 @@ const openW = (lat,lon,callback) => {
             callback('Ubicación no encontrada',undefined)
 
         }else{
-            callback(undefined,`La temperatura es de ${body.main.temp}°, con una humedad de ${body.main.humidity} g/m^³ y presión de ${body.main.pressure} Pa. Hay una temperatura mínima de ${body.main.temp_min}° y una máxima de ${body.main.temp_max}° centigrados`);
+            callback(undefined,`La temperatura es de ${body.main.temp}°, con una humedad de ${body.main.humidity} g/m^³ y presión de ${body.main.pressure} Pa. Hay una temperatura mínima de ${body.main.temp_min}° y una máxima de ${body.main.temp_max}°gi centigrados`);
                
         }    
     });
